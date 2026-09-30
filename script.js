@@ -499,9 +499,9 @@ function initOrder() {
       /* Formspree requires a field called `email`. We don't ask
          the customer for one, so we synthesize a valid-format
          address from their Instagram handle. */
-      email: ig + '@instagram.jestr',
+      email: ig + " ",
 
-      _replyto: ig + '@instagram.jestr',
+      _replyto: ig + " ",
       _subject: 'New order — ' + p.name + ' — ' + state.size + ' / ' + state.colour + ' / ' + state.quality,
       product_name:      p.name,
       product_slug:      p.slug,
