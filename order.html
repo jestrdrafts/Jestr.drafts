@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Place your order — jestr.drafts</title>
+  <meta name="description" content="Pick the design, colour, size and quality, then leave your phone number and Instagram so jestr.drafts can confirm your order." />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">jestr.drafts</a>
+      <a href="index.html" class="back-link">← back to designs</a>
+    </div>
+  </header>
+
+  <main class="container section">
+    <h1 class="page-title">Place your <span class="accent">order</span></h1>
+    <p class="section-sub">
+      Pick the design, the colour and the size. Leave your number and Instagram
+      and I'll confirm everything with you directly.
+    </p>
+
+    <div class="order-grid">
+      <div class="order-preview">
+        <img id="order-preview-img" src="" alt="" width="1000" height="1000" />
+        <div class="preview-footer">
+          <span class="preview-label" id="preview-label">back design</span>
+          <button type="button" class="tool-btn" id="toggle-photo">⟳ switch photo</button>
+        </div>
+      </div>
+
+      <form class="order-form" id="order-form">
+        <fieldset>
+          <legend class="legend">design</legend>
+          <div class="design-list" id="design-list"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="legend">colour</legend>
+          <div class="flex-wrap" id="colour-list"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="legend">size</legend>
+          <div class="flex-wrap" id="size-list"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="legend">quality</legend>
+          <div class="quality-list" id="quality-list"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="legend">your contact</legend>
+          <input type="tel" required id="order-phone" placeholder="phone number" aria-label="Phone number" />
+          <input type="text" required id="order-ig" placeholder="@instagram" aria-label="Instagram account" />
+        </fieldset>
+
+        <div class="total-block">
+          <div class="total-row">
+            <span class="label">total</span>
+            <span class="total-price" id="total-price">0 DT</span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg" id="order-submit">confirm order</button>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <div class="toaster" id="toaster" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

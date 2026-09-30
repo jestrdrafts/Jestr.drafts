@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>jestr.drafts — vintage & streetwear drops</title>
+  <meta name="description" content="jestr.drafts sources hip-hop era tees, baggy denim and rare outerwear. Small drops, one piece each, no restocks." />
+  <meta property="og:title" content="jestr.drafts — vintage & streetwear drops" />
+  <meta property="og:description" content="Hip-hop era tees, baggy denim and rare outerwear. One piece each, no restocks." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="favicon.png" type="image/png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">jestr.drafts</a>
+      <nav class="nav">
+        <a href="#drop">Jestr.Graphix & Visual Direction</a>
+        <a href="#how">how it works</a>
+      </nav>
+      <a href="#drop" class="btn btn-primary btn-sm">shop the drop</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <img class="hero-img" src="jester-logo.webp" alt="Black and white jestr.drafts masked face visual" width="1600" height="1104" />
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+      <p class="eyebrow">Jestr.Graphix & Visual Direction · live now · 24 pieces</p>
+      <h1>
+        We don't make clothes.
+        <span class="accent">We make culture.</span>
+      </h1>
+      <p class="hero-sub">
+        we don't make clothes , We craft , from 0 to final , u share/wear the design/tshirt .
+        Built For The Culture.
+      </p>
+    </div>
+  </section>
+
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track" id="marquee"></div>
+  </div>
+
+  <section id="drop" class="container section">
+    <div class="section-head">
+      <h2>The designs</h2>
+      <span class="count" id="product-count">0 available</span>
+    </div>
+    <ul class="product-grid" id="product-grid"></ul>
+  </section>
+
+  <section id="how" class="section section-alt">
+    <div class="container grid-3">
+      <article>
+        <span class="step">01</span>
+        <h3>WE CRAFT</h3>
+        <p>Personalized custom tees, raw posters, signature scarves, Jestr-COLLECTION drops, and heavy-duty flags. Built for the culture.</p>
+      </article>
+      <article>
+        <span class="step">02</span>
+        <h3>WE POST — YOU ROCK IT</h3>
+        <p>If you dig the vision, ride with it. Step into the light, and join the wave.</p>
+      </article>
+      <article>
+        <span class="step">03</span>
+        <h3>CLAIM YOURS</h3>
+        <p>All sizes are available , print on demand . Express delivery across all of Tunisia in 48 hours—straight to yo door</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="suggest" class="section section-alt">
+    <div class="container narrow">
+      <h2>Got an <span class="accent">idea</span>?</h2>
+      <p class="section-sub">Type it, sketch it, or both. Drop your idea and your contact — I'll hit you back.</p>
+
+      <form class="idea-form" id="idea-form">
+        <div>
+          <label for="idea-text" class="label">Describe it in words</label>
+          <textarea id="idea-text" rows="3" maxlength="500"
+            placeholder="Colors, placement, words, references, themes you'd want on a piece..."></textarea>
+        </div>
+
+        <div>
+          <label for="idea-canvas" class="label">Or sketch it out</label>
+          <div class="canvas-toolbar">
+            <button type="button" class="tool-btn" data-tool="pen" aria-pressed="true">✏ pen</button>
+            <button type="button" class="tool-btn" data-tool="eraser" aria-pressed="false">⌫ erase</button>
+            <div class="swatches" id="swatches"></div>
+            <label class="range-label">size <input type="range" id="brush-size" min="1" max="20" value="4" /></label>
+            <button type="button" class="tool-btn clear-btn" id="clear-canvas">🗑 clear</button>
+          </div>
+          <canvas id="idea-canvas" width="800" height="360"></canvas>
+        </div>
+
+        <div class="grid-2">
+          <div>
+            <label for="idea-phone" class="label">Your phone number</label>
+            <input id="idea-phone" type="tel" required placeholder="+216 20 000 000" />
+          </div>
+          <div>
+            <label for="idea-ig" class="label">Your Instagram</label>
+            <input id="idea-ig" type="text" required placeholder="@yourhandle" />
+          </div>
+        </div>
+
+        <button type="button" class="btn btn-primary" id="idea-download">⬇ download drawing</button>
+        <p class="section-sub">Don't hesitate to send it to us at @jestr.drafts on instagram.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="logo">jestr.drafts</span>
+      <span>sourced worldwide · shipped from Tunis</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <div class="toaster" id="toaster" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
